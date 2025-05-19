@@ -33,7 +33,7 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .container {
-    padding: 50px;
+    padding: 30px 25px;
   }
   .container h1 {
     font-size: 1.8rem;
@@ -48,13 +48,13 @@ body {
     width: 2px;
     height: 60px;
     background-color: #fc2222;
-    top: 40px;
-    left: 40px;
+    top: 15px;
+    left: 15px;
   }
 }
 @media (max-width: 767px) {
   .container {
-    padding: 25px;
+    padding: 25px 10px;
   }
   .container h1 {
     font-size: 1.5rem;
@@ -70,7 +70,7 @@ body {
     height: 50px;
     background-color: #fc2222;
     top: 15px;
-    left: 15px;
+    left: 6px;
   }
 }
 .product-items {
@@ -160,4 +160,47 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .product-items {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    justify-content: center;
+  }
+  .product-item {
+    width: 350px;
+  }
+  .item-image img {
+    width: 325px;
+  }
+}
+@media (max-width: 767px) {
+  .product-items {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 20px;
+  }
+  .product-item {
+    width: 300px;
+    height: 445px;
+  }
+  .item-image img {
+    width: 275px;
+    height: 215px;
+  }
+  .btn {
+    width: 275px;
+  }
+  #icon {
+    width: 45px;
+    height: 45px;
+  }
+  #icon i {
+    font-size: 20px;
+  }
 }
